@@ -1,6 +1,6 @@
 # Release Notes
 
-## May 19, 2024
+## Version 0.5 - May 19, 2024
 
 ### Typography Updates
 - Implemented comprehensive typography system with Berthold Akzidenz Grotesk BE font family
