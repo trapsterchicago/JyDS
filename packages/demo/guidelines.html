@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guidelines - JyDS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div id="nav-link">
+                <span>Menu</span>
+                <a href="index.html" class="brand">Jy</a>
+            </div>
+            <a href="tokens.html" class="nav-link tokens">Tokens</a>
+            <a href="typography.html" class="nav-link typography">Typography</a>
+            <a href="components.html" class="nav-link components">Components</a>
+            <a href="guidelines.html" class="nav-link guidelines active">Guidelines</a>
+            <a href="resources.html" class="nav-link resources">Resources</a>
+        </nav>
+
+        <!-- Guidelines Section -->
+        <section class="section">
+            <h1>Guidelines</h1>
+            <p>These guidelines outline a systemic approach to creating products that lower barriers to participation, treating accessibility as an attribute of the experience rather than a separate feature, while also addressing the complex interplay of cultural, linguistic, and technical factors that shape how users interact with digital products.</p>
+        </section>
+
+        <section class="section">
+            <h2>Inclusivity</h2>
+            <blockquote class="style-quote"><q>All humans are growing, changing, and adapting to the world around them every day. We want our designs to reflect that diversity. Every decision we make can raise or lower barriers to participation in society. It's our collective responsibility to lower these barriers through inclusive products, services, environments, and experiences.</blockquote>
+            <cite class="style-citation">Source: <a href="https://www.microsoft.com/design/inclusive/" target="_blank">Microsoft Inclusive Design</a></cite>
+        </section>
+
+        <section class="section">
+            <h3>Accessibility</h3>
+            <p>Disabilities aren't inherent personal characteristics but rather emerge from the interactions between people and their environment. When these interactions aren't thoughtfully designed, they can lead to physical, cognitive, or social exclusion. Not all disabilities are permanent. A broken hand may limit the ability to use a mouse or keyboard for a period of time. Glare from the sun, a loud environment, contextual changes such as driving or walking can all cause accessibility issues.</p>
+            <p>Inclusive design is a method used to help make products more accessible, but accessibility is an attribute of the experience, measured against specific standards outlined by the World Wide Web Consortium (W3C). The Web Content Accessibility Guidelines (WCAG) are organized into four main categories:</p>
+
+            <h4 class="font-size-lg">Perceivable</h4>
+            <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+
+            <h4 class="font-size-lg">Operable</h4>
+            <p>User interface components and navigation must be operable.</p>
+
+            <h4 class="font-size-lg">Understandable</h4>
+            <p>Information and the operation of the user interface must be understandable.</p>
+
+            <h4 class="font-size-lg">Robust</h4>
+            <p>Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</p>
+        </section>
+
+        <section class="section">
+            <h3>Internationalization</h3>
+            <h4 class="font-size-lg">Internationalization</h4>
+            <p>Internationalization is a fundamental consideration in the design and development process to include users that may vary in culture, region, or language. It can help avoid awkward and expensive re-engineering when the product is introduced to a new market. Internationalization, much like inclusivity, is a way of thinking and methods to facilitate specific requirements. The product should be designed and built with the anticipation that the presentation can change without affecting the underlying architecture.</p>
+ 
+            <h3>Localization</h3>
+            <p>Localization refers to the adaptation of content to specific cultural nuances of another region. This can help establish credibility and familiarity as well as enhance the user experience and improve usability. Some specific considerations are:</p>
+
+            <h4>Languages</h4>
+            <ol>
+                <li>Amount of screen space required to display information (For example, German words are typically longer than English words)
+                    <ul>
+                        <li>Different user input field length on forms</li>
+                        <li>Size of buttons or other interface elements</li>
+                    </ul>
+                </li>
+                <li>Text Direction
+                    <ul>
+                        <li>Left-to-right (LTR)</li>
+                        <li>Right-to-left (RTL)</li>
+                    </ul>
+                </li>
+                <li>Alphabets
+                    <ul>
+                        <li>Support additional unicode character sets</li>
+                        <li>Collation rules for sorting by alphabetical order</li>
+                    </ul>
+                </li>
+                <li>Hierarchy
+                    <ul>
+                        <li>Typographic and visual hierarchy can look different with different characters</li>
+                    </ul>
+                </li>
+                <li>Input Validation</li>
+                <li>Keyboard type</li>
+            </ol>
+
+            <h4>Numbers</h4>
+            <ol>
+                <li>Decimal separator - period or comma</li>
+                <li>Thousands separator [space] or comma</li>
+                <li>Currency symbol</li>
+            </ol>
+
+            <h4>Units of Measurement</h4>
+            <ol>
+                <li>Metric</li>
+                <li>Imperial</li>
+            </ol>
+
+            <h4>Names & Titles</h4>
+            <ol>
+                <li>How many parts</li>
+                <li>Order of parts</li>
+                <li>Multiple given or family names</li>
+                <li>Alphabetical sorting on which part?</li>
+                <li>Title abbreviation</li>
+                <li>Form design implications</li>
+            </ol>
+
+            <h4>Date & Time</h4>
+            <ol>
+                <li>ISO standards</li>
+                <li>MM-DD or DD-MM</li>
+                <li>Time zone</li>
+                <li>12 hour vs 24 hour clock</li>
+            </ol>
+
+            <h4>Contact information</h4>
+            <ol>
+                <li>Phone number format</li>
+                <li>Address
+                    <ul>
+                        <li>Format</li>
+                        <li>Number of fields</li>
+                        <li>Structure</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h4>Visuals</h4>
+            <ol>
+                <li>Color
+                    <ul>
+                        <li>Meaning in different countries</li>
+                    </ul>
+                </li>
+                <li>Symbols
+                    <ul>
+                        <li>Representations based on cultural reference</li>
+                    </ul>
+                </li>
+                <li>Imagery
+                    <ul>
+                        <li>Acceptable cultural norms</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </div>
+  </body>
+</html> 

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KM11RDF0V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0KM11RDF0V');
+    </script>
+    <title>Jack Yager | Design System: Typography</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <nav class="nav">
+            <div id="nav-link">
+                <span>Menu</span>
+                <a href="index.html" class="brand">Jy</a>
+            </div>
+            <a href="tokens.html" class="nav-link tokens">Tokens</a>
+            <a href="typography.html" class="nav-link typography active">Typography</a>
+            <span class="nav-link components">Components (Coming soon)</span>
+            <span class="nav-link guidelines">Guidelines (Coming soon)</span>
+            <span class="nav-link resources">Resources (Coming soon)</span>
+        </nav>
+
+        <section class="section">
+            <h1>Typography</h1>
+            <p>Berthold Akzidenz Grotesk stands as a cornerstone in typographic history, originating from the H. Berthold AG type foundry in Germany in 1896. We use Berthold Akzidenz Grotesk as our primary typeface. Initially designed for commercial printing (hence "Akzidenz," meaning jobbing or commercial printing), this typeface gained renewed prominence in the 1950s-60s under Günter Gerhard Lange's supervision. Its influence extends far beyond its own use, serving as the blueprint for numerous neo-grotesque typefaces including Helvetica and Univers. This historical typeface emerged as a key element in the Swiss/International Style movement, representing modernist ideals and establishing the neo-grotesque as the dominant sans-serif approach of the 20th century.</p>
+            <p>The design of Akzidenz Grotesk embodies functional elegance through its clean, rational character forms and minimal stroke contrast. Distinguished by its slightly condensed letterforms, neutral shapes, and practical approach to typography, it features unique characteristics like the distinctive 'R' with a slightly curved leg and the 'G' with its vertical cut-off. These elements combine to create a typeface that conveys clarity and objectivity while maintaining a timeless quality that continues to resonate in contemporary design. Its neutral yet authoritative voice makes it exceptionally versatile across applications from headlines to body text, bringing both historical gravitas and functional performance.</p>
+        </section>
+
+        <section class="section">
+            <h2>Font Families</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-example">Berthold Akzidenz Grotesk [Primary]</p>
+                        <code>--font-family-primary: 'Berthold Akzidenz Grotesk', sans-serif</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-example">Courier [Monospace]</p>
+                        <code>--font-family-mono: 'Courier', monospace</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Font Weights</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-example-light">Light</p>
+                        <code>--font-family-primary-light: 'Berthold Akzidenz Grotesk Light', sans-serif</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-example-regular">Regular</p>
+                        <code>--font-family-primary-regular: 'Berthold Akzidenz Grotesk Regular', sans-serif</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-example-bold">Bold</p>
+                        <code>--font-family-primary-bold: 'Berthold Akzidenz Grotesk Bold', sans-serif</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Font Sizes</h2>
+            <hr>
+            <p>Meets WCAG AA for body and headings. Small can be used for UI elements and Extra Small for metadata only.</p>
+            <div class="margin-top-3">
+                <div class="example-grid">
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-xs example-item-text">Extra Small</p>
+                            <code>--font-size-xs: 0.75rem (12pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-sm example-item-text">Small</p>
+                            <code>--font-size-sm: 0.875rem (14pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-base example-item-text">Base</p>
+                            <code>--font-size-base: 1rem (16pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-lg example-item-text">Large</p>
+                            <code>--font-size-lg: 1.125rem (18pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-xl example-item-text">Extra Large</p>
+                            <code>--font-size-xl: 1.25rem (20pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-2xl example-item-text">2X Large</p>
+                            <code>--font-size-2xl: 1.5rem (24pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-3xl example-item-text">3X Large</p>
+                            <code>--font-size-3xl: 2rem (32pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-4xl example-item-text">4X Large</p>
+                            <code>--font-size-4xl: 2.5rem (40pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-5xl example-item-text">5X Large</p>
+                            <code>--font-size-5xl: 3rem (48pt)</code>
+                        </div>
+                    </div>
+                    <div class="example-item">
+                        <div class="example-item-content">
+                            <p class="font-size-6xl example-item-text">6X Large</p>
+                            <code>--font-size-6xl: 3.5rem (56pt)</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Line Height</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="line-height-box line-height-box-tight"></div>
+                    <p class="line-height-tight example-item-text">Tight</p>
+                    <code>--line-height-tight: 1.1</code>
+                </div>
+                <div class="example-item">
+                    <div class="line-height-box line-height-box-normal"></div>
+                    <p class="line-height-normal example-item-text">Normal</p>
+                    <code>--line-height-normal: 1.3</code>
+                </div>
+                <div class="example-item">
+                    <div class="line-height-box line-height-box-chill"></div>
+                    <p class="line-height-chill example-item-text">Chill</p>
+                    <code>--line-height-chill: 1.5</code>
+                </div>
+                <div class="example-item">
+                    <div class="line-height-box line-height-box-relaxed"></div>
+                    <p class="line-height-relaxed example-item-text">Relaxed</p>
+                    <code>--line-height-relaxed: 1.75</code>
+                </div>
+                <div class="example-item">
+                    <div class="line-height-box line-height-box-loose"></div>
+                    <p class="line-height-loose example-item-text">Loose</p>
+                    <code>--line-height-loose: 2</code>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Letter Spacing</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="letter-spacing-tight example-item-text">Tight</p>
+                        <code>--letter-spacing-tight: -0.025em</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="letter-spacing-normal example-item-text">Normal</p>
+                        <code>--letter-spacing-normal: 0</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="letter-spacing-wide example-item-text">Wide</p>
+                        <code>--letter-spacing-wide: 0.025em</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="letter-spacing-wider example-item-text">Wider</p>
+                        <code>--letter-spacing-wider: 0.05em</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Type Scale</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h1 class="example-heading">H1 - 6xl, Bold</h1>
+                        <code>h1 { font-family: var(--font-family-primary-bold); font-size: var(--font-size-6xl); font-weight: var(--font-weight-bold); }</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h2 class="example-heading">H2 - 5xl, Light</h2>
+                        <code>h2 { font-family: var(--font-family-primary-light); font-size: var(--font-size-5xl); font-weight: var(--font-weight-light); }</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h3 class="example-heading">H3 - 4xl, Bold</h3>
+                        <code>h3 { font-family: var(--font-family-primary-bold); font-size: var(--font-size-4xl); font-weight: var(--font-weight-bold); }</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h4 class="example-heading">H4 - 3xl, Light</h4>
+                        <code>h4 { font-family: var(--font-family-primary-light); font-size: var(--font-size-3xl); font-weight: var(--font-weight-light); }</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h5 class="example-heading">H5 - 2xl, Bold</h5>
+                        <code>h5 { font-family: var(--font-family-primary-bold); font-size: var(--font-size-2xl); font-weight: var(--font-weight-bold); }</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="flex-column">
+                        <h6 class="example-heading">H6 - xl, Light</h6>
+                        <code>h6 { font-family: var(--font-family-primary-light); font-size: var(--font-size-xl); font-weight: var(--font-weight-light); }</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Type Styles</h2>
+            <hr>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="style-caption">Caption</p>
+                        <code>.style-caption { 
+    border-left: 1px solid white;
+    padding: 0 0 0 var(--spacing-4);
+    font-size: var(--font-size-xs);
+}</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <q class="style-quote">Quote</q>
+                        <code>.style-quote { 
+    font-size: var(--font-size-2xl);
+}</code>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <cite class="style-citation">Citation</cite>
+                        <code>cite.style-citation { 
+    font-size: var(--font-size-sm);
+    font-style: normal;
+    letter-spacing: var(--letter-spacing-wide);
+}</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Type Modifiers</h2>
+            <hr>
+            <p>Used for adjusting heading styles while maintaining semantic hierarchy</p>
+            <div class="example-grid">
+                <div class="example-item">
+                    <div class="example-item-content">
+                        <p class="font-size-lg example-item-text">Large Text</p>
+                        <code>.font-size-lg { font-size: var(--font-size-lg); }</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="https://www.jackyager.com">www.jackyager.com</a>
+        </footer>
+
+    </div>
+  </body>
+</html> 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KM11RDF0V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0KM11RDF0V');
+    </script>
+    <title>Jack Yager | Design System: Tokens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div id="nav-link">
+                <span>Menu</span>
+                <a href="index.html" class="brand">Jy</a>
+            </div>
+            <a href="tokens.html" class="nav-link tokens active">Tokens</a>
+            <a href="typography.html" class="nav-link typography">Typography</a>
+            <span class="nav-link components">Components (Coming soon)</span>
+            <span class="nav-link guidelines">Guidelines (Coming soon)</span>
+            <span class="nav-link resources">Resources (Coming soon)</span>
+        </nav>
+
+        <section class="section">
+            <h1>Tokens</h1>
+            <p>Design tokens are the fundamental building blocks of our design system, functioning as the single source of truth for all visual decisions. These name-value pairs are the raw materials for component construction, enabling designers and developers to assemble complex interfaces from standardized values rather than arbitrary decisions. This systematic approach streamlines the design-to-development workflow through a shared vocabulary and creates resilience by allowing global updates to propagate automatically when the brand evolves. By transforming scattered visual decisions into a structured design language, tokens enable our components to remain internally consistent while our design system scales efficiently across all touchpoints.</p>
+        </section>
+
+        <section class="section">
+            <h2>Brand Colors</h2>
+            <hr>
+            <div class="grid">
+                <div class="example-grid">
+                    <div class="example-item">
+                        <div class="color-box color-box-blue"></div>
+                        <span><span class="color-text-blue">Blue</span> <span class="color-text">[4.6:1 Passes WCAG AA]</span></span>
+                        <code>--color-brand-blue: #4A9FB3</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-pink"></div>
+                        <span><span class="color-text-pink">Pink</span> <span class="color-text">[4.7:1 Passes WCAG AA]</span></span>
+                        <code>--color-brand-pink: #C57B9E</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-green"></div>
+                        <span><span class="color-text-green">Green</span> <span class="color-text">[4.8:1 Passes WCAG AA]</span></span>
+                        <code>--color-brand-green: #8BC23F</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-white"></div>
+                        <span><span class="color-text">White</span> <span class="color-text">[19.1:1 Passes WCAG AA & AAA]</span></span>
+                        <code>--color-brand-white: #F2F4F4</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-black"></div>
+                        <span><span class="color-text">Black</span> <span class="color-text">[21:1 Passes WCAG AA]</span></span>
+                        <code>--color-brand-black: #000000</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Semantic Colors</h2>
+            <hr>
+            <div class="grid">
+                <div class="example-grid">
+                    <div class="example-item">
+                        <div class="color-box color-box-success"></div>
+                        <span><span class="color-text-success">Success</span> <span class="color-text">[4.6:1 Passes WCAG AA]</span></span>
+                        <code>--color-feedback-success: #2E8B57</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-error"></div>
+                        <span><span class="color-text-error">Error</span> <span class="color-text">[4.7:1 Passes WCAG AA]</span></span>
+                        <code>--color-feedback-error: #DC143C</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-warning"></div>
+                        <span><span class="color-text-warning">Warning</span> <span class="color-text">[4.8:1 Passes WCAG AA]</span></span>
+                        <code>--color-feedback-warning: #FF8C00</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Neutral Colors</h2>
+            <hr>
+            <div class="grid">
+                <div class="example-grid">
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-900"></div>
+                        <span>Gray 900</span>
+                        <code>--color-gray-900: #212121</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-800"></div>
+                        <span>Gray 800</span>
+                        <code>--color-gray-800: #424242</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-700"></div>
+                        <span>Gray 700</span>
+                        <code>--color-gray-700: #616161</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-600"></div>
+                        <span>Gray 600</span>
+                        <code>--color-gray-600: #757575</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-500"></div>
+                        <span>Gray 500</span>
+                        <code>--color-gray-500: #9E9E9E</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-400"></div>
+                        <span>Gray 400</span>
+                        <code>--color-gray-400: #BDBDBD</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-300"></div>
+                        <span>Gray 300</span>
+                        <code>--color-gray-300: #E0E0E0</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-200"></div>
+                        <span>Gray 200</span>
+                        <code>--color-gray-200: #EEEEEE</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="color-box color-box-gray-100"></div>
+                        <span>Gray 100</span>
+                        <code>--color-gray-100: #F5F5F5</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Spacing</h2>
+            <hr>
+            <div class="grid">
+                <div class="example-grid">
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-1"></div>
+                        <span>4px</span>
+                        <code>--spacing-1: 0.25rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-2"></div>
+                        <span>8px</span>
+                        <code>--spacing-2: 0.5rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-3"></div>
+                        <span>12px</span>
+                        <code>--spacing-3: 0.75rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-4"></div>
+                        <span>16px</span>
+                        <code>--spacing-4: 1rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-6"></div>
+                        <span>24px</span>
+                        <code>--spacing-6: 1.5rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-8"></div>
+                        <span>32px</span>
+                        <code>--spacing-8: 2rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-12"></div>
+                        <span>48px</span>
+                        <code>--spacing-12: 3rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-16"></div>
+                        <span>64px</span>
+                        <code>--spacing-16: 4rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-24"></div>
+                        <span>96px</span>
+                        <code>--spacing-24: 6rem</code>
+                    </div>
+                    <div class="example-item">
+                        <div class="spacing-box spacing-box-32"></div>
+                        <span>128px</span>
+                        <code>--spacing-32: 8rem</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="https://www.jackyager.com">www.jackyager.com</a>
+        </footer>
+
+    </div>
+</body>
+</html> 
