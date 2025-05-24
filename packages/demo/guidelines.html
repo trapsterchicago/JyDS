@@ -7,149 +7,193 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="nav">
-            <div id="nav-link">
-                <span>Menu</span>
-                <a href="index.html" class="brand">Jy</a>
+    <header>
+        <a href="index.html" id="JyDS">Jy<span class="color-text-blue">DS</span></a>
+    </header>
+    <nav class="nav">
+        <a href="tokens.html" class="nav-link">Tokens</a>
+        <a href="typography.html" class="nav-link">Typography</a>
+        <a href="components.html" class="nav-link">Components</a>
+        <span class="nav-link active">Guidelines</span>
+    </nav>
+
+    <!-- Guidelines Section -->
+    <section class="section">
+        <h1>Guidelines</h1>
+        <p>These guidelines outline a systemic approach to creating products that lower barriers to participation, treating accessibility as an attribute of the experience rather than a separate feature, while also addressing the complex interplay of cultural, linguistic, and technical factors that shape how users interact with digital products.</p>
+        
+        <blockquote class="style-quote"><q>All humans are growing, changing, and adapting to the world around them every day. We want our designs to reflect that diversity. Every decision we make can raise or lower barriers to participation in society. It's our collective responsibility to lower these barriers through inclusive products, services, environments, and experiences.</q></blockquote>
+        <p><cite>Source: <a href="https://www.microsoft.com/design/inclusive/" target="_blank">Microsoft Inclusive Design</a></cite></p>
+    </section>
+
+    <section class="section">
+        <h2>Inclusivity</h2>
+        <p>A disability is not an attribute of a person. It is something that happens at the points of interaction between people and society. These interactions can create physical, cognitive, and social exclusion if they are not designed to create utility and elegance for everyone. It's important to keep in mind that not all disabilities are permanent. For example, a broken arm can temporarily limit the ability to use a keyboard and high context situations can temporarily affect sensory and cognitive abilities.</p>
+
+        <h3>Accessibility</h3>
+        <p>Disabilities aren't inherent personal characteristics but rather emerge from the interactions between people and their environment. When these interactions aren't thoughtfully designed, they can lead to physical, cognitive, or social exclusion. Not all disabilities are permanent. A broken hand may limit the ability to use a mouse or keyboard for a period of time. Glare from the sun, a loud environment, contextual changes such as driving or walking can all cause accessibility issues.</p>
+
+        <p>Inclusive design is a method used to help make products more accessible, but accessibility is an attribute of the experience, measured against specific standards outlined by the World Wide Web Consortium (W3C). The Web Content Accessibility Guidelines (WCAG) are organized into four main categories:</p>
+
+        <div class="glossary">
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Perceivable</h4>
+                </div>
+                <div class="glossary-definition">
+        <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+                </div>
             </div>
-            <a href="tokens.html" class="nav-link tokens">Tokens</a>
-            <a href="typography.html" class="nav-link typography">Typography</a>
-            <a href="components.html" class="nav-link components">Components</a>
-            <a href="guidelines.html" class="nav-link guidelines active">Guidelines</a>
-            <a href="resources.html" class="nav-link resources">Resources</a>
-        </nav>
 
-        <!-- Guidelines Section -->
-        <section class="section">
-            <h1>Guidelines</h1>
-            <p>These guidelines outline a systemic approach to creating products that lower barriers to participation, treating accessibility as an attribute of the experience rather than a separate feature, while also addressing the complex interplay of cultural, linguistic, and technical factors that shape how users interact with digital products.</p>
-        </section>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Operable</h4>
+                </div>
+                <div class="glossary-definition">
+        <p>User interface components and navigation must be operable.</p>
+                </div>
+            </div>
 
-        <section class="section">
-            <h2>Inclusivity</h2>
-            <blockquote class="style-quote"><q>All humans are growing, changing, and adapting to the world around them every day. We want our designs to reflect that diversity. Every decision we make can raise or lower barriers to participation in society. It's our collective responsibility to lower these barriers through inclusive products, services, environments, and experiences.</blockquote>
-            <cite class="style-citation">Source: <a href="https://www.microsoft.com/design/inclusive/" target="_blank">Microsoft Inclusive Design</a></cite>
-        </section>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Understandable</h4>
+                </div>
+                <div class="glossary-definition">
+        <p>Information and the operation of the user interface must be understandable.</p>
+                </div>
+            </div>
 
-        <section class="section">
-            <h3>Accessibility</h3>
-            <p>Disabilities aren't inherent personal characteristics but rather emerge from the interactions between people and their environment. When these interactions aren't thoughtfully designed, they can lead to physical, cognitive, or social exclusion. Not all disabilities are permanent. A broken hand may limit the ability to use a mouse or keyboard for a period of time. Glare from the sun, a loud environment, contextual changes such as driving or walking can all cause accessibility issues.</p>
-            <p>Inclusive design is a method used to help make products more accessible, but accessibility is an attribute of the experience, measured against specific standards outlined by the World Wide Web Consortium (W3C). The Web Content Accessibility Guidelines (WCAG) are organized into four main categories:</p>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Robust</h4>
+                </div>
+                <div class="glossary-definition">
+        <p>Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h4 class="font-size-lg">Perceivable</h4>
-            <p>Information and user interface components must be presentable to users in ways they can perceive.</p>
+    <section class="section">
+        <h2>Internationalization</h2>
+        <p>Internationalization is a fundamental consideration in the design and development process to include users that may vary in culture, region, or language. It can help avoid awkward and expensive re-engineering when the product is introduced to a new market. Internationalization, much like inclusivity, is a way of thinking and methods to facilitate specific requirements. The product should be designed and built with the anticipation that the presentation can change without affecting the underlying architecture.</p>
 
-            <h4 class="font-size-lg">Operable</h4>
-            <p>User interface components and navigation must be operable.</p>
+        <h3>Localization</h3>
+        <p>Localization refers to the adaptation of content to specific cultural nuances of another region. This can help establish credibility and familiarity as well as enhance the user experience and improve usability. Some specific considerations are:</p>
 
-            <h4 class="font-size-lg">Understandable</h4>
-            <p>Information and the operation of the user interface must be understandable.</p>
-
-            <h4 class="font-size-lg">Robust</h4>
-            <p>Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</p>
-        </section>
-
-        <section class="section">
-            <h3>Internationalization</h3>
-            <h4 class="font-size-lg">Internationalization</h4>
-            <p>Internationalization is a fundamental consideration in the design and development process to include users that may vary in culture, region, or language. It can help avoid awkward and expensive re-engineering when the product is introduced to a new market. Internationalization, much like inclusivity, is a way of thinking and methods to facilitate specific requirements. The product should be designed and built with the anticipation that the presentation can change without affecting the underlying architecture.</p>
- 
-            <h3>Localization</h3>
-            <p>Localization refers to the adaptation of content to specific cultural nuances of another region. This can help establish credibility and familiarity as well as enhance the user experience and improve usability. Some specific considerations are:</p>
-
-            <h4>Languages</h4>
-            <ol>
-                <li>Amount of screen space required to display information (For example, German words are typically longer than English words)
-                    <ul>
-                        <li>Different user input field length on forms</li>
-                        <li>Size of buttons or other interface elements</li>
+        <div class="glossary">
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Text</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Design for 30-50% text growth; German and Finnish translations often require significantly more space than English</li>
+                        <li>Allow for shorter text; some languages like Chinese can convey the same meaning in fewer characters</li>
+                        <li>Increase line spacing for languages with diacritics (accents) and complex scripts to prevent character overlap</li>
+                        <li>Ensure fonts include character sets for target languages; web fonts may need fallbacks for unsupported scripts</li>
+                        <li>Support right-to-left (RTL) languages like Arabic and Hebrew; mirror layouts and reverse reading patterns</li>
+                        <li>Accommodate languages like Japanese and Chinese that can be written vertically in traditional contexts</li>
                     </ul>
-                </li>
-                <li>Text Direction
-                    <ul>
-                        <li>Left-to-right (LTR)</li>
-                        <li>Right-to-left (RTL)</li>
-                    </ul>
-                </li>
-                <li>Alphabets
-                    <ul>
-                        <li>Support additional unicode character sets</li>
-                        <li>Collation rules for sorting by alphabetical order</li>
-                    </ul>
-                </li>
-                <li>Hierarchy
-                    <ul>
-                        <li>Typographic and visual hierarchy can look different with different characters</li>
-                    </ul>
-                </li>
-                <li>Input Validation</li>
-                <li>Keyboard type</li>
-            </ol>
+                </div>
+            </div>
 
-            <h4>Numbers</h4>
-            <ol>
-                <li>Decimal separator - period or comma</li>
-                <li>Thousands separator [space] or comma</li>
-                <li>Currency symbol</li>
-            </ol>
-
-            <h4>Units of Measurement</h4>
-            <ol>
-                <li>Metric</li>
-                <li>Imperial</li>
-            </ol>
-
-            <h4>Names & Titles</h4>
-            <ol>
-                <li>How many parts</li>
-                <li>Order of parts</li>
-                <li>Multiple given or family names</li>
-                <li>Alphabetical sorting on which part?</li>
-                <li>Title abbreviation</li>
-                <li>Form design implications</li>
-            </ol>
-
-            <h4>Date & Time</h4>
-            <ol>
-                <li>ISO standards</li>
-                <li>MM-DD or DD-MM</li>
-                <li>Time zone</li>
-                <li>12 hour vs 24 hour clock</li>
-            </ol>
-
-            <h4>Contact information</h4>
-            <ol>
-                <li>Phone number format</li>
-                <li>Address
-                    <ul>
-                        <li>Format</li>
-                        <li>Number of fields</li>
-                        <li>Structure</li>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Layout</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Use elastic layouts that adapt to varying text lengths without breaking design integrity</li>
+                        <li>Create buttons that expand with longer text while maintaining minimum touch targets</li>
+                        <li>Allow input fields to accommodate longer labels and placeholder text in various languages</li>
+                        <li>Design expandable navigation that handles varying menu item lengths</li>
+                        <li>Build cards with flexible heights to accommodate different content lengths</li>
+                        <li>Implement responsive grids that reflow content when text expansion affects column widths</li>
                     </ul>
-                </li>
-            </ol>
+                </div>
+            </div>
 
-            <h4>Visuals</h4>
-            <ol>
-                <li>Color
-                    <ul>
-                        <li>Meaning in different countries</li>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Content Structure</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Use culturally neutral icons; avoid hand gestures, religious symbols, or culture-specific imagery</li>
+                        <li>Plan for text overlay replacement in images and graphics; consider text-free alternatives</li>
+                        <li>Research color symbolism; red means danger in Western cultures but luck in Chinese culture</li>
+                        <li>Support different decimal separators, thousands separators, and currency formatting</li>
+                        <li>Accommodate various date formats (MM/DD/YYYY vs DD/MM/YYYY) and calendar systems</li>
+                        <li>Design flexible address forms; postal codes vary by country and some regions don't use them</li>
                     </ul>
-                </li>
-                <li>Symbols
-                    <ul>
-                        <li>Representations based on cultural reference</li>
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">User Interface Elements</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Account for different alphabetical sorting; some languages sort accented characters differently</li>
+                        <li>Support character variants and diacritics in search; "café" should match "cafe"</li>
+                        <li>Consider virtual keyboards, IME (Input Method Editors) for Asian languages, and character composition</li>
+                        <li>Ensure placeholder text is translatable and culturally appropriate</li>
+                        <li>Design space for longer error messages and culturally appropriate tone</li>
+                        <li>Use universal loading indicators rather than text-based progress messages</li>
                     </ul>
-                </li>
-                <li>Imagery
-                    <ul>
-                        <li>Acceptable cultural norms</li>
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Cultural Considerations</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Accommodate different visual scanning patterns; Western F-pattern vs other cultural reading behaviors</li>
+                        <li>Consider cultural taboos, dress codes, gender representation, and inclusive imagery</li>
+                        <li>Allow for formal vs informal language variations; some cultures require different levels of politeness</li>
+                        <li>Design for varying privacy and data sharing comfort levels across cultures</li>
+                        <li>Support different phone number formats, social media preferences, and communication channels</li>
+                        <li>Account for different work week patterns, holidays, and seasonal considerations</li>
                     </ul>
-                </li>
-            </ol>
-        </section>
-    </div>
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Technical Implementation</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Use UTF-8 encoding to support all international characters and emoji</li>
+                        <li>Plan for language/region URL patterns (subdirectories, subdomains, or parameters)</li>
+                        <li>Ensure database fields can store variable-length international text</li>
+                        <li>Implement smart truncation that doesn't break words or character sequences</li>
+                        <li>Structure APIs to deliver localized content efficiently</li>
+                        <li>Organize locale-specific assets (images, videos, documents) systematically</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h4 class="font-size-base font-weight-bold">Accessibility & Compliance</h4>
+                </div>
+                <div class="glossary-definition">
+                    <ul class="plain">
+                        <li>Ensure screen readers properly handle different languages and character sets</li>
+                        <li>Support various keyboard layouts and input methods across cultures</li>
+                        <li>Design for different privacy laws, accessibility requirements, and content regulations</li>
+                        <li>Provide clear, accessible language selection with native language names</li>
+                        <li>Use proper lang attributes and ARIA labels for multilingual content</li>
+                        <li>Consider varying literacy levels and technological familiarity across target markets</li>
+        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
   </body>
 </html> 
