@@ -15,71 +15,90 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
-        <nav class="nav">
-            <div id="nav-link">
-                <span>Menu</span>
-                <a href="index.html" class="brand">Jy</a>
+    <header>
+        <a href="index.html" id="JyDS">Jy<span class="color-text-blue">DS</span></a>
+    </header>
+    <nav class="nav">
+        <a href="tokens.html" class="nav-link">Tokens</a>
+        <a href="typography.html" class="nav-link">Typography</a>
+        <a href="components.html" class="nav-link">Components</a>
+        <a href="guidelines.html" class="nav-link">Guidelines</a>
+    </nav>
+
+    <section class="section">
+        <h1>Jy Design System</h1>
+        <p>This design system is based on a boldly minimalist aesthetic meant to elevate content by de-emphasizing its container. It's inspired by the design of museums, where unadorned space enhances focus on the art to stand on its own. Since there is a variety of styles, content, and concepts presented, this system needs to support the work with continuity and a cohesive structural language. The design language also needs to be flexible enough to support various form factors, sizes, and conditions. Based on these criteria, the elements and presentation are based on Swiss Design principles and methods.</p>
+        <p>Swiss Design, also known as the International Typographic Style, emerged in Switzerland during the 1950s as a revolutionary approach to visual communication that would forever transform graphic design. Pioneered by designers like Josef Müller-Brockmann, Max Bill, and Armin Hofmann at schools in Zürich and Basel, this movement rejected decorative excess in favor of mathematical grids, sans-serif typography (notably Akzidenz-Grotesk and later Helvetica), and asymmetrical layouts that prioritized clarity and objectivity. The style developed in post-war Europe amid a desire for rational, universal communication systems that could transcend linguistic and cultural barriers—a response to the complicated political climate of the time.</p>
+        <p>Swiss Design's defining characteristics include rigorous adherence to grid systems, ample white space, striking photographic imagery instead of illustrations, and typography treated as both a functional and aesthetic element, often set flush left/ragged right. These principles enabled designers to create highly structured yet dynamic compositions where content determined form rather than decoration, establishing a visual language that emphasized information hierarchy and readability above all else. The movement's commitment to clarity, precision, and objectivity continues to influence contemporary design, particularly in corporate identity, wayfinding systems, and digital interfaces where its functional minimalism provides a framework for complex information delivery.</p>
+    </section>
+
+    <section class="section">
+        <h2>Release Notes</h2>
+        <div class="glossary">
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h3 class="font-size-base font-weight-bold"><a href="RELEASE_NOTES_v1.0.0.md" target="_blank">v1.0.0</a></h3>
+                </div>
+                <div class="glossary-definition">
+                    <p>Initial release with core design system components.</p>
+                </div>
             </div>
-            <a href="tokens.html" class="nav-link tokens">Tokens</a>
-            <a href="typography.html" class="nav-link typography">Typography</a>
-            <span class="nav-link components">Components (Coming soon)</span>
-            <span class="nav-link guidelines">Guidelines (Coming soon)</span>
-            <span class="nav-link resources">Resources (Coming soon)</span>
-        </nav>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h3 class="font-size-base font-weight-bold"><a href="RELEASE_NOTES_v0.5.md" target="_blank">v0.5</a></h3>
+                </div>
+                <div class="glossary-definition">
+                    <p>Major update with typography system, components, and guidelines.</p>
+                </div>
+            </div>
+            <div class="glossary-item">
+                <div class="glossary-term">
+                    <h3 class="font-size-base font-weight-bold">v0.1</h3>
+                </div>
+                <div class="glossary-definition">
+                    <p>Alpha version with basic building blocks</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="section">
-            <h1>Jy Design System</h1>
-            <p>This design system is based on a boldly minimalist aesthetic meant to elevate content by de-emphasizing its container. It's inspired by the design of museums, where unadorned space enhances focus on the art to stand on its own. Since there is a variety of styles, content, and concepts presented, this system needs to support the work with continuity and a cohesive structural language. The design language also needs to be flexible enough to support various form factors, sizes, and conditions. Based on these criteria, the elements and presentation are based on Swiss Design principles and methods.</p>
-            <p>Swiss Design, also known as the International Typographic Style, emerged in Switzerland during the 1950s as a revolutionary approach to visual communication that would forever transform graphic design. Pioneered by designers like Josef Müller-Brockmann, Max Bill, and Armin Hofmann at schools in Zürich and Basel, this movement rejected decorative excess in favor of mathematical grids, sans-serif typography (notably Akzidenz-Grotesk and later Helvetica), and asymmetrical layouts that prioritized clarity and objectivity. The style developed in post-war Europe amid a desire for rational, universal communication systems that could transcend linguistic and cultural barriers—a response to the complicated political climate of the time.</p>
-            <p>Swiss Design's defining characteristics include rigorous adherence to grid systems, ample white space, striking photographic imagery instead of illustrations, and typography treated as both a functional and aesthetic element, often set flush left/ragged right. These principles enabled designers to create highly structured yet dynamic compositions where content determined form rather than decoration, establishing a visual language that emphasized information hierarchy and readability above all else. The movement's commitment to clarity, precision, and objectivity continues to influence contemporary design, particularly in corporate identity, wayfinding systems, and digital interfaces where its functional minimalism provides a framework for complex information delivery.</p>
-        </section>
+    <!-- <section class="section">
+        <h2>Design Tokens</h2>
+        <hr>
+        <p>Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.</p>
+        <a href="tokens.html" class="button">View Tokens</a>
+    </section>
 
-        <section class="section">
-            <h2>Release Notes</h2>
-            <p>0.5 - <a href="RELEASE_NOTES.md">Major update with typography system, components, and guidelines</a></p>
-            <p>0.1 (Alpha) - Initial version with basic building blocks</p>
-        </section>
+    <section class="section">
+        <h2>Typography</h2>
+        <hr>
+        <p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. Our typography system is designed to be clear, consistent, and accessible.</p>
+        <a href="typography.html" class="button">View Typography</a>
+    </section>
 
-        <!-- <section class="section">
-            <h2>Design Tokens</h2>
-            <hr>
-            <p>Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.</p>
-            <a href="tokens.html" class="button">View Tokens</a>
-        </section>
+    <section class="section">
+        <h2>Components</h2>
+        <hr>
+        <p>Components are the building blocks of our design system. Each component is designed to be reusable and consistent across applications.</p>
+        <a href="components.html" class="button">View Components</a>
+    </section>
 
-        <section class="section">
-            <h2>Typography</h2>
-            <hr>
-            <p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. Our typography system is designed to be clear, consistent, and accessible.</p>
-            <a href="typography.html" class="button">View Typography</a>
-        </section>
+    <section class="section">
+        <h2>Guidelines</h2>
+        <hr>
+        <p>Guidelines provide direction and best practices for using our design system. They help ensure consistency and quality across all applications.</p>
+        <a href="guidelines.html" class="button">View Guidelines</a>
+    </section>
 
-        <section class="section">
-            <h2>Components</h2>
-            <hr>
-            <p>Components are the building blocks of our design system. Each component is designed to be reusable and consistent across applications.</p>
-            <a href="components.html" class="button">View Components</a>
-        </section>
+    <section class="section">
+        <h2>Resources</h2>
+        <hr>
+        <p>Resources include tools, templates, and other materials to help you work with our design system effectively.</p>
+        <a href="resources.html" class="button">View Resources</a>
+    </section> -->
 
-        <section class="section">
-            <h2>Guidelines</h2>
-            <hr>
-            <p>Guidelines provide direction and best practices for using our design system. They help ensure consistency and quality across all applications.</p>
-            <a href="guidelines.html" class="button">View Guidelines</a>
-        </section>
-
-        <section class="section">
-            <h2>Resources</h2>
-            <hr>
-            <p>Resources include tools, templates, and other materials to help you work with our design system effectively.</p>
-            <a href="resources.html" class="button">View Resources</a>
-        </section> -->
-
-        <footer class="footer">
-            <a href="https://www.jackyager.com">www.jackyager.com</a>
-        </footer>
-
-    </div>
+    <footer class="footer">
+        <a href="https://www.jackyager.com">www.jackyager.com</a>
+    </footer>
   </body>
 </html> 
